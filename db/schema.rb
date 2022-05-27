@@ -40,4 +40,6 @@ ActiveRecord::Schema.define(version: 2022_05_26_122541) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "bookmarks", "lists"
+  add_foreign_key "bookmarks", "movies"
 end
